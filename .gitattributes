@@ -1,0 +1,37 @@
+# --- Standard Python Project Git Attributes ---
+
+# Normalize all text files to use LF line endings in the repo
+# and auto-convert to CRLF on Windows checkouts if needed.
+* text=auto eol=lf
+
+# Ensure Python scripts are treated as text
+*.py text diff=python
+
+# Jupyter notebooks: treat as text for meaningful diffs
+*.ipynb text diff=ipynb
+
+# Common data and config formats
+*.json text
+*.yml  text
+*.yaml text
+*.csv  text
+*.md   text
+*.tex  text
+*.bib  text
+
+# Images and binary files: keep as binary (no line-ending conversion)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.pkl binary
+
+# Ignore diff noise for common build artifacts
+*.egg-info/ export-ignore
+
+# Reinforce that venv and caches should never be exported
+venv/ export-ignore
+__pycache__/ export-ignore
+
