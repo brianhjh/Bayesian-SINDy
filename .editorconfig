@@ -1,0 +1,40 @@
+# --- EditorConfig: Consistent style for all editors ---
+
+# Root EditorConfig file
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Indentation: 4 spaces for Python, 2 for JSON/YAML
+indent_style = space
+indent_size = 4
+
+# Python files
+[*.py]
+indent_size = 4
+max_line_length = 88
+
+# Jupyter Notebooks
+[*.ipynb]
+indent_size = 4
+
+# JSON and YAML
+[*.json]
+indent_size = 2
+
+[*.yml]
+indent_size = 2
+[*.yaml]
+indent_size = 2
+
+# Markdown and LaTeX (for your report work)
+[*.md]
+trim_trailing_whitespace = false
+[*.tex]
+indent_size = 2
+
