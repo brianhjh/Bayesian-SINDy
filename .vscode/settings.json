@@ -1,4 +1,10 @@
 {
     "python.defaultInterpreterPath": "/Users/junhoha/Documents/Bayesian-SINDy/venv/bin/python",
     "python.terminal.activateEnvironment": true
+
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    }
 }
